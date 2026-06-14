@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Assignment</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
+      color: #222;
+      padding: 40px 30px;
+      max-width: 750px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+      margin-bottom: 36px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-bottom: 2px solid #222;
+      padding-bottom: 6px;
+      margin: 28px 0 18px;
+    }
+    .q-block {
+      margin-bottom: 22px;
+    }
+    .q-text {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+    .code {
+      font-family: 'Courier New', monospace;
+      font-size: 0.87rem;
+      line-height: 1.75;
+      color: #222;
+      margin-bottom: 6px;
+      white-space: pre-wrap;
+    }
+    .output {
+      font-size: 0.9rem;
+      color: #1a5c35;
+      font-weight: 600;
+    }
+    .out-label {
+      font-size: 0.8rem;
+      color: #555;
+      margin-bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>JavaScript Assignment</h1>
+<p class="subtitle">Beginner Level — Basic Programs &amp; Conditional Statements</p>
+
+<h2>Section 1: Beginner Level</h2>
+
+<div class="q-block">
+  <p class="q-text">Q1. Write a JavaScript program to print your name.</p>
+  <pre class="code">let name = "Urooj";
+document.getElementById("out1").innerText = name;</pre>
+  <p class="out-label">Output:</p>
+  <p class="output" id="out1"></p>
+</div>
+
+<div class="q-block">
+  <p class="q-text">Q2. Write a JavaScript program to add two numbers.</p>
+  <pre class="code">let a = 10;
+let b = 5;
+let result = a + b;
+document.getElementById("out2").innerText = "10 + 5 = " + result;</pre>
+  <p class="out-label">Output:</p>
+  <p class="output" id="out2"></p>
+</div>
+
+<div class="q-block">
+  <p class="q-text">Q3. Write a JavaScript program to subtract two numbers.</p>
+  <pre class="code">let a = 20;
+let b = 8;
+let result = a - b;
+document.getElementById("out3").innerText = "20 - 8 = " + result;</pre>
+  <p class="out-label">Output:</p>
+  <p class="output" id="out3"></p>
+</div>
+
+<div class="q-block">
+  <p class="q-text">Q4. Write a JavaScript program to multiply two numbers.</p>
+  <pre class="code">let a = 6;
+let b = 7;
+let result = a * b;
+document.getElementById("out4").innerText = "6 x 7 = " + result;</pre>
+  <p class="out-label">Output:</p>
+  <p class="output" id="out4"></p>
+</div>
+
+<div class="q-block">
+  <p class="q-text">Q5. Write a JavaScript program to divide two numbers.</p>
+  <pre class="code">let a = 50;
+let b = 5;
+let result = a / b;
+document.getElementById("out5").innerText = "50 / 5 = " + result;</pre>
+  <p class="out-label">Output:</p>
+  <p class="output" id="out5"></p>
+</div>
+
+<h2>Section 2: Conditional Statement Questions</h2>
+
+<div class="q-block">
+  <p class="q-text">Q6. Write a JavaScript program to check whether a number is even or odd.</p>
+  <pre class="code">let number = 14;
+
+if (number % 2 == 0) {
+  document.getElementById("out6").innerText = number + " is an Even number";
+} else {
+  document.getElementById("out6").innerText = number + " is an Odd number";
+}</pre>
+  <p class="out-label">Output:</p>
+  <p class="output" id="out6"></p>
+</div>
+
+<div class="q-block">
+  <p class="q-text">Q7. Write a JavaScript program to check if a person is eligible to vote.</p>
+  <pre class="code">let age = 20;
+
+if (age >= 18) {
+  document.getElementById("out7").innerText = "Age is " + age + ". You are eligible to vote.";
+} else {
+  document.getElementById("out7").innerText = "Age is " + age + ". You are NOT eligible to vote.";
+}</pre>
+  <p class="out-label">Output:</p>
+  <p class="output" id="out7"></p>
+</div>
+
+<div class="q-block">
+  <p class="q-text">Q8. Write a JavaScript program to check if a number is positive or negative.</p>
+  <pre class="code">let number = -7;
+
+if (number > 0) {
+  document.getElementById("out8").innerText = number + " is a Positive number";
+} else if (number < 0) {
+  document.getElementById("out8").innerText = number + " is a Negative number";
+} else {
+  document.getElementById("out8").innerText = "The number is Zero";
+}</pre>
+  <p class="out-label">Output:</p>
+  <p class="output" id="out8"></p>
+</div>
+
+<div class="q-block">
+  <p class="q-text">Q9. Write a JavaScript program to check if a number is greater than 100.</p>
+  <pre class="code">let number = 150;
+
+if (number > 100) {
+  document.getElementById("out9").innerText = number + " is Greater than 100";
+} else {
+  document.getElementById("out9").innerText = number + " is NOT greater than 100";
+}</pre>
+  <p class="out-label">Output:</p>
+  <p class="output" id="out9"></p>
+</div>
+
+<div class="q-block">
+  <p class="q-text">Q10. Write a JavaScript program to check if a student passed or failed.</p>
+  <pre class="code">let marks = 75;
+
+if (marks >= 50) {
+  document.getElementById("out10").innerText = "Marks: " + marks + ". The student has Passed!";
+} else {
+  document.getElementById("out10").innerText = "Marks: " + marks + ". The student has Failed.";
+}</pre>
+  <p class="out-label">Output:</p>
+  <p class="output" id="out10"></p>
+</div>
+
+<script>
+  document.getElementById("out1").innerText = "Urooj";
+  document.getElementById("out2").innerText = "10 + 5 = " + (10 + 5);
+  document.getElementById("out3").innerText = "20 - 8 = " + (20 - 8);
+  document.getElementById("out4").innerText = "6 x 7 = " + (6 * 7);
+  document.getElementById("out5").innerText = "50 / 5 = " + (50 / 5);
+
+  let n6 = 14;
+  document.getElementById("out6").innerText = n6 % 2 == 0 ? n6 + " is an Even number" : n6 + " is an Odd number";
+
+  let age = 20;
+  document.getElementById("out7").innerText = age >= 18 ? "Age is " + age + ". You are eligible to vote." : "Age is " + age + ". You are NOT eligible to vote.";
+
+  let n8 = -7;
+  document.getElementById("out8").innerText = n8 > 0 ? n8 + " is a Positive number" : n8 < 0 ? n8 + " is a Negative number" : "The number is Zero";
+
+  let n9 = 150;
+  document.getElementById("out9").innerText = n9 > 100 ? n9 + " is Greater than 100" : n9 + " is NOT greater than 100";
+
+  let marks = 75;
+  document.getElementById("out10").innerText = marks >= 50 ? "Marks: " + marks + ". The student has Passed!" : "Marks: " + marks + ". The student has Failed.";
+</script>
+
+</body>
+</html>
