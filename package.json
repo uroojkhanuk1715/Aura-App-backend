@@ -1,0 +1,13 @@
+{
+  "name": "aura-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aura social app backend: SQL database, secure auth, posts, DMs, ads and creator earnings. No npm dependencies.",
+  "main": "server.js",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "ALLOW_FAKE_TOPUP=1 node --disable-warning=ExperimentalWarning server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test \"test/*.test.js\""
+  }
+}
